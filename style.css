@@ -38,6 +38,16 @@
     url(./assets/fonts/Montserrat/static/Montserrat-Medium.ttf) format("ttf");
 }
 
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local("Montserrat"),
+    url(./assets/fonts/Montserrat/static/Montserrat-Bold.woff) format("woff"),
+    url(./assets/fonts/Montserrat/static/Montserrat-Bold.ttf) format("ttf");
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -254,7 +264,11 @@ section div button:first-of-type {
   font-size: 2rem;
 }
 
-.karte-grid div:first-of-type {
+.karte-grid a {
+  text-decoration: none;
+}
+
+.karte-grid a:first-of-type div {
   background-image: url("./assets/Fruestueck.jpg");
   background-position: center;
   background-size: cover;
@@ -278,6 +292,82 @@ section div button:first-of-type {
   background-size: cover;
   background-repeat: no-repeat;
   grid-column: span 2;
+}
+
+.menucard-section header {
+  display: flex;
+  align-items: center;
+  padding: 8em 5em 2em;
+}
+
+.menucard-section header h2 {
+  font-size: 3rem;
+  font-family: Cinzel, serif;
+  color: #3f3d56;
+  margin-left: 0.3em;
+}
+
+.menucard-section .card {
+  padding: 3em 5em;
+}
+
+.menucard-section .card h3 {
+  font-size: 2.5rem;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  color: #3f3d56;
+  margin-bottom: 1em;
+}
+
+.menucard-section .card h4 {
+  text-align: center;
+  font-size: 2rem;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  color: #3f3d56;
+  margin-bottom: 1em;
+}
+
+.line {
+  height: 0.3rem;
+  background-color: #3f3d56;
+}
+
+.menucard-section .card h4 ~ h4 {
+  margin-top: 2em;
+}
+
+.dish {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5em;
+  gap: 2em;
+}
+
+.dish .price {
+  width: 10%;
+  text-align: end;
+  font-size: 1.5rem;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  color: #3f3d56;
+}
+
+.dish .menu {
+  width: 90%;
+}
+
+.dish .menu h5 {
+  font-size: 1.5rem;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  color: #3f3d56;
+}
+
+.dish .menu p {
+  font-size: 1rem;
+  color: #3f3d56;
+  max-width: 45ch;
 }
 
 @media screen and (max-width: 1250px) {
