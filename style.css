@@ -277,7 +277,7 @@ section div button:first-of-type {
   grid-row: 2/3;
 }
 
-.karte-grid div:nth-child(3) {
+.karte-grid a:nth-child(3) div {
   background-image: url("./assets/Menue.jpg");
   background-position: center;
   background-size: cover;
@@ -328,6 +328,15 @@ section div button:first-of-type {
   margin-bottom: 1em;
 }
 
+.menucard-section .card > h5 {
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  color: #3f3d56;
+  font-size: 1.7rem;
+  margin-bottom: 0.5em;
+  margin-top: -1em;
+}
+
 .line {
   height: 0.3rem;
   background-color: #3f3d56;
@@ -364,10 +373,21 @@ section div button:first-of-type {
   color: #3f3d56;
 }
 
+.dish .menu h6 {
+  font-size: 1rem;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  color: #3f3d56;
+}
+
 .dish .menu p {
   font-size: 1rem;
   color: #3f3d56;
   max-width: 45ch;
+}
+
+.lastsub {
+  margin-bottom: 4em;
 }
 
 @media screen and (max-width: 1250px) {
