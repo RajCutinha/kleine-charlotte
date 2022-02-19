@@ -520,14 +520,16 @@ section div p {
   .karte-grid {
     grid-template-columns: 1fr;
     row-gap: 2em;
+    width: 100%;
   }
 
   .karte-grid div {
     min-height: 12em;
+    width: 100%;
   }
 
   .menu-section {
-    padding: 5em 0 2em;
+    padding: 5em 5% 2em;
   }
 
   .menu-section h1 {
