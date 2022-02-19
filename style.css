@@ -492,10 +492,13 @@ section div p {
     margin-left: unset;
   }
 
-  section,
+  section {
+    padding-top: 3em;
+  }
+
   .menu-section,
   .contact-section {
-    padding-top: 3rem;
+    padding: 5em 2em 3em;
   }
 }
 
