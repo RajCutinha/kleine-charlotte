@@ -164,13 +164,13 @@ section div p {
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   overflow: hidden;
-  height: 40vh;
 }
 
 .gallery div {
   overflow: hidden;
+  min-height: 300px;
 }
 
 .gallery div img {
