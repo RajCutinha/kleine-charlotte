@@ -310,6 +310,11 @@ section div p {
   margin-left: 0.3em;
 }
 
+.menucard-section header div {
+  min-height: 3rem;
+  min-width: 3rem;
+}
+
 .menucard-section .card {
   padding: 3em 5em;
 }
@@ -444,7 +449,7 @@ section div p {
     right: 0;
     z-index: 10;
     min-height: 3rem;
-    max-height: 3rem;
+    max-height: 4rem;
     display: flex;
     align-items: center;
     gap: 1em;
@@ -490,15 +495,20 @@ section div p {
   section {
     width: 100%;
     margin-left: unset;
-  }
-
-  section {
     padding-top: 3em;
   }
 
   .menu-section,
   .contact-section {
     padding: 5em 2em 3em;
+  }
+
+  .menucard-section .card {
+    padding: 3em 5%;
+  }
+
+  .menucard-section header {
+    padding: 4em 5% 2em;
   }
 }
 
@@ -555,6 +565,39 @@ section div p {
   .disclaim {
     padding: 2em 1em;
   }
+
+  nav {
+    width: 60%;
+  }
+
+  .menucard-section header h2 {
+    font-size: 2.5rem;
+  }
+
+  .menucard-section header div {
+    min-height: 2rem;
+    min-width: 2rem;
+  }
+
+  .menucard-section .card h3 {
+    font-size: 1.7rem;
+  }
+
+  .menucard-section .card h4 {
+    font-size: 1.5rem;
+  }
+
+  .dish .menu h5 {
+    font-size: 1.2rem;
+  }
+
+  .dish .menu p {
+    font-size: 0.8rem;
+  }
+
+  .contact div h1 {
+    font-size: 2rem;
+  }
 }
 
 @media screen and (max-width: 350px) {
@@ -564,5 +607,10 @@ section div p {
 
   nav ul:first-of-type {
     align-items: center;
+  }
+
+  .menucard-section header {
+    flex-wrap: wrap;
+    gap: 1em;
   }
 }
