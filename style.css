@@ -479,6 +479,7 @@ section div p {
     display: flex;
     padding: 0 4%;
     width: 40%;
+    height: 100%;
     transition: all 0.5s ease-in-out;
     transform: translateX(-100%);
     z-index: 100;
