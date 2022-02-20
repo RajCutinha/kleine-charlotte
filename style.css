@@ -163,14 +163,17 @@ section div p {
 }
 
 .gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   overflow: hidden;
 }
 
 .gallery div {
   overflow: hidden;
-  min-height: 300px;
+  min-height: 12em;
+  max-height: 30em;
+  flex: 1 1 30%;
+  min-width: 300px;
 }
 
 .gallery div img {
