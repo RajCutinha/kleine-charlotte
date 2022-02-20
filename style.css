@@ -137,7 +137,6 @@ nav ul:first-of-type li a {
 
 nav ul:first-of-type li a:hover,
 nav ul:first-of-type li a:focus {
-  font-size: 2.2rem;
   font-weight: 700;
 }
 
