@@ -88,7 +88,8 @@ img {
 }
 
 nav {
-  background-color: #c4c4c4;
+  /* background-color: #c4c4c4; */
+  background-color: #aba583;
   width: 20%;
   height: 100vh;
   position: fixed;
@@ -510,7 +511,8 @@ section div p {
   .menubar-mobile {
     display: block;
     padding: 0.5em 1.75em;
-    background-color: #c4c4c4;
+    /* background-color: #c4c4c4; */
+    background-color: #aba583;
     box-shadow: 1px 1px 20px 5px rgba(0, 0, 0, 0.5);
     position: fixed;
     top: 0;
