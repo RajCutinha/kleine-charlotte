@@ -43,7 +43,7 @@ function diashow() {
   });
 }
 
-let diashowInterval = window.setInterval(diashow, 5000);
+let diashowInterval = window.setInterval(diashow, 3500);
 
 diashowPageination.forEach((index) => {
   index.addEventListener("click", (e) => {
@@ -57,6 +57,6 @@ diashowPageination.forEach((index) => {
     );
     diashowPageination[currentDiashowIndex].classList.add("active");
     window.clearInterval(diashowInterval);
-    diashowInterval = window.setInterval(diashow, 5000);
+    diashowInterval = window.setInterval(diashow, 3500);
   });
 });
