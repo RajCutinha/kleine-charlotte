@@ -173,6 +173,17 @@ section div p {
 
 .diashow {
   height: 40vh;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+
+.diashow::after {
+  content: "";
+  inset: 0;
+  background-color: #000;
+  position: absolute;
+  opacity: 0.2;
 }
 
 .diashow img {
@@ -182,6 +193,39 @@ section div p {
   height: 100%;
   display: inline-block;
   vertical-align: middle;
+  flex: 1 0 100%;
+  transition: all 1s ease-in-out;
+}
+
+.diashow ul {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  display: flex;
+  gap: 1em;
+  list-style: circle;
+}
+
+.diashow ul li {
+  padding: 0.7em;
+  display: inline-block;
+  border-radius: 50%;
+  background-color: #3f3d56;
+  position: relative;
+  cursor: pointer;
+}
+
+.diashow ul li.active::before {
+  content: "";
+  position: absolute;
+  padding: 0.3em;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
 }
 
 .gallery {
@@ -223,6 +267,7 @@ section div p {
   justify-content: center;
   gap: 5em;
   flex-wrap: wrap-reverse;
+  font-style: normal;
 }
 
 .contact div:last-child {
