@@ -511,6 +511,7 @@ section div p {
     display: block;
     padding: 0.5em 1.75em;
     background-color: #c4c4c4;
+    box-shadow: 1px 1px 20px 5px rgba(0, 0, 0, 0.5);
     position: fixed;
     top: 0;
     left: 0;
@@ -535,10 +536,26 @@ section div p {
     display: block;
     padding: 0.1rem 0;
     background-color: #000;
+    transition: all 0.5s ease-in-out;
+    pointer-events: none;
   }
 
   .menubar-mobile div span:nth-child(2) {
     margin: 0.5em 0;
+  }
+
+  .menubar-mobile div.active span:first-child {
+    position: relative;
+    transform: rotate(45deg) translateY(450%);
+    z-index: 1;
+  }
+
+  .menubar-mobile div.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menubar-mobile div.active span:last-child {
+    transform: rotate(-45deg) translateY(-450%);
   }
 
   .menubar-mobile h2 {
