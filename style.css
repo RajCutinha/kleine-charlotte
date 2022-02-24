@@ -360,11 +360,14 @@ section div p {
   grid-row: 2/3;
 }
 
-.karte-grid div:last-child {
+.karte-grid a:last-of-type div {
   background-image: url("./assets/Getraenke.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.karte-grid a:last-of-type {
   grid-column: span 2;
 }
 
@@ -642,7 +645,7 @@ section div p {
     font-size: 1.5rem;
   }
 
-  .karte-grid div:last-child {
+  .karte-grid a:last-of-type {
     grid-column: unset;
   }
 }
