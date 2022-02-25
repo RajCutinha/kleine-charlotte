@@ -7,8 +7,8 @@ const cardTime = gsap.timeline({
   scrollTrigger: {
     trigger: ".card",
     scrub: true,
-    start: "0% 110%",
-    end: "100% bottom",
+    start: "top 130%",
+    end: "70% bottom",
   },
   defaults: { duration: 1, ease: Power4.easeInOut },
 });
@@ -18,6 +18,5 @@ cardTime
   .fromTo(
     ".dish",
     { opacity: 0, color: "green" },
-    { opacity: 1, color: "red", stagger: 1 },
-    "<"
+    { opacity: 1, color: "red", stagger: 1 }
   );
