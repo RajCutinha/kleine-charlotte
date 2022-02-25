@@ -15,7 +15,7 @@ gridChilds.forEach((children) => {
   gridTl.fromTo(
     children,
     { opacity: 0, scale: 0 },
-    { opacity: 1, scale: 1, ease: Power4.easeInOut, stagger: 1 },
+    { opacity: 1, scale: 1, ease: Power4.easeInOut, stagger: 1, duration: 0.5 },
     "<"
   );
 });
