@@ -468,6 +468,10 @@ section div p {
   max-width: 45ch;
 }
 
+.lastmain {
+  margin-bottom: 3em;
+}
+
 .lastsub {
   margin-bottom: 4em;
 }
@@ -582,6 +586,15 @@ section div p {
     transform: translateX(0);
   }
 
+  nav.active::before {
+    content: "";
+    position: absolute;
+    height: 100vh;
+    width: 100vh;
+    opacity: 0;
+    z-index: -1;
+  }
+
   section {
     width: 100%;
     margin-left: unset;
@@ -648,6 +661,30 @@ section div p {
   .karte-grid a:last-of-type {
     grid-column: unset;
   }
+
+  .menucard-section .card > h5 {
+    display: none;
+  }
+
+  .lastmain {
+    margin-bottom: unset;
+  }
+
+  .dish {
+    width: 100%;
+    justify-content: space-evenly;
+    gap: unset;
+  }
+
+  .dish .menu {
+    width: 50%;
+    flex: 1;
+    justify-self: flex-start;
+  }
+
+  .dish .price {
+    flex: 1;
+  }
 }
 
 @media screen and (max-width: 450px) {
@@ -693,6 +730,12 @@ section div p {
 @media screen and (max-width: 350px) {
   nav {
     width: 100%;
+  }
+
+  nav img {
+    width: 60%;
+    display: block;
+    margin: 0 auto;
   }
 
   nav ul:first-of-type {
