@@ -343,7 +343,7 @@ section div p {
 }
 
 .karte-grid a:first-of-type div {
-  background-image: url("./assets/Fruestueck.jpg");
+  background-image: url("./assets/categories/Fruestueck.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -352,7 +352,7 @@ section div p {
 }
 
 .karte-grid a:nth-child(3) div {
-  background-image: url("./assets/Menue.jpg");
+  background-image: url("./assets/categories/Menue.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -361,7 +361,7 @@ section div p {
 }
 
 .karte-grid a:last-of-type div {
-  background-image: url("./assets/Getraenke.jpg");
+  background-image: url("./assets/categories/Getraenke.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
