@@ -4,8 +4,8 @@
   font-weight: 400;
   font-display: swap;
   src: local("Cinzel"),
-    url(./assets/fonts/Cinzel/static/Cinzel-Regular.woff) format("woff"),
-    url(./assets/fonts/Cinzel/static/Cinzel-Regular.ttf) format("ttf");
+    url(../assets/fonts/Cinzel/static/Cinzel-Regular.woff) format("woff"),
+    url(../assets/fonts/Cinzel/static/Cinzel-Regular.ttf) format("ttf");
 }
 
 @font-face {
@@ -14,8 +14,8 @@
   font-weight: 700;
   font-display: swap;
   src: local("Cinzel"),
-    url(./assets/fonts/Cinzel/static/Cinzel-Bold.woff) format("woff"),
-    url(./assets/fonts/Cinzel/static/Cinzel-Bold.ttf) format("ttf");
+    url(../assets/fonts/Cinzel/static/Cinzel-Bold.woff) format("woff"),
+    url(../assets/fonts/Cinzel/static/Cinzel-Bold.ttf) format("ttf");
 }
 
 @font-face {
@@ -24,8 +24,9 @@
   font-weight: 400;
   font-display: swap;
   src: local("Montserrat"),
-    url(./assets/fonts/Montserrat/static/Montserrat-Regular.woff) format("woff"),
-    url(./assets/fonts/Montserrat/static/Montserrat-Regular.ttf) format("ttf");
+    url(../assets/fonts/Montserrat/static/Montserrat-Regular.woff)
+      format("woff"),
+    url(../assets/fonts/Montserrat/static/Montserrat-Regular.ttf) format("ttf");
 }
 
 @font-face {
@@ -34,8 +35,8 @@
   font-weight: 500;
   font-display: swap;
   src: local("Montserrat"),
-    url(./assets/fonts/Montserrat/static/Montserrat-Medium.ttf) format("woff"),
-    url(./assets/fonts/Montserrat/static/Montserrat-Medium.ttf) format("ttf");
+    url(../assets/fonts/Montserrat/static/Montserrat-Medium.ttf) format("woff"),
+    url(../assets/fonts/Montserrat/static/Montserrat-Medium.ttf) format("ttf");
 }
 
 @font-face {
@@ -44,8 +45,8 @@
   font-weight: 700;
   font-display: swap;
   src: local("Montserrat"),
-    url(./assets/fonts/Montserrat/static/Montserrat-Bold.woff) format("woff"),
-    url(./assets/fonts/Montserrat/static/Montserrat-Bold.ttf) format("ttf");
+    url(../assets/fonts/Montserrat/static/Montserrat-Bold.woff) format("woff"),
+    url(../assets/fonts/Montserrat/static/Montserrat-Bold.ttf) format("ttf");
 }
 
 * {
@@ -343,7 +344,7 @@ section div p {
 }
 
 .karte-grid a:first-of-type div {
-  background-image: url("./assets/categories/Fruestueck.jpg");
+  background-image: url("../assets/categories/Fruestueck.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -352,7 +353,7 @@ section div p {
 }
 
 .karte-grid a:nth-child(3) div {
-  background-image: url("./assets/categories/Menue.jpg");
+  background-image: url("../assets/categories/Menue.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -361,7 +362,7 @@ section div p {
 }
 
 .karte-grid a:last-of-type div {
-  background-image: url("./assets/categories/Getraenke.jpg");
+  background-image: url("../assets/categories/Getraenke.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
