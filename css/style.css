@@ -400,6 +400,7 @@ section div p {
   font-weight: 700;
   color: #3f3d56;
   margin-bottom: 1em;
+  text-align: center;
 }
 
 .menucard-section .card h4 {
@@ -415,9 +416,10 @@ section div p {
   font-family: Montserrat, sans-serif;
   font-weight: 700;
   color: #3f3d56;
-  font-size: 1.7rem;
-  margin-bottom: 0.5em;
+  font-size: 2rem;
+  margin-bottom: 1em;
   margin-top: -1em;
+  text-align: center;
 }
 
 .line {
@@ -432,12 +434,13 @@ section div p {
 .dish {
   display: flex;
   align-items: center;
-  margin-bottom: 1.5em;
-  gap: 2em;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 3em;
+  text-align: center;
 }
 
 .dish .price {
-  width: 10%;
   text-align: end;
   font-size: 1.5rem;
   font-family: Montserrat, sans-serif;
@@ -445,15 +448,12 @@ section div p {
   color: #3f3d56;
 }
 
-.dish .menu {
-  width: 90%;
-}
-
 .dish .menu h5 {
   font-size: 1.5rem;
   font-family: Montserrat, sans-serif;
   font-weight: 500;
   color: #3f3d56;
+  margin-bottom: 0.5em;
 }
 
 .dish .menu h6 {
@@ -461,6 +461,7 @@ section div p {
   font-family: Montserrat, sans-serif;
   font-weight: 500;
   color: #3f3d56;
+  margin-bottom: 1em;
 }
 
 .dish .menu p {
