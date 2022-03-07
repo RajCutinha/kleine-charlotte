@@ -251,7 +251,8 @@ section div p {
 }
 
 .disclaim {
-  background-color: #303e46;
+  /* background-color: #303e46; */
+  background-color: #3d1001;
   padding: 2em 6em;
 }
 
