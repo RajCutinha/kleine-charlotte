@@ -167,6 +167,7 @@ section {
 
 section div p {
   font-size: 1.5rem;
+  font-size: clamp(1rem, 15vw, 1.5rem);
   line-height: 2;
   font-family: Montserrat, sans-serif;
   color: #fff;
@@ -174,7 +175,8 @@ section div p {
 }
 
 .diashow {
-  height: 40vh;
+  height: 30vh;
+  min-height: 50vh;
   position: relative;
   display: flex;
   overflow: hidden;
@@ -261,7 +263,7 @@ section div p {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 2em;
+  padding: 4em 2em;
 }
 
 .contact {
@@ -509,9 +511,7 @@ section div p {
   section div p {
     font-size: 1rem;
   }
-}
 
-@media screen and (max-width: 950px) {
   nav ul:first-of-type li a {
     padding: 0.5em 0;
   }
@@ -602,6 +602,10 @@ section div p {
     width: 100%;
     margin-left: unset;
     padding-top: 3em;
+  }
+
+  .diashow {
+    min-height: 40vh;
   }
 
   .menu-section,
@@ -748,5 +752,23 @@ section div p {
   .menucard-section header {
     flex-wrap: wrap;
     gap: 1em;
+  }
+}
+
+@media screen and (max-height: 600px) {
+  .diashow {
+    min-height: 50vh;
+  }
+}
+
+@media screen and (max-height: 600px) and (min-width: 1200px) {
+  .diashow {
+    min-height: 410px;
+  }
+}
+
+@media screen and (max-height: 400px) {
+  .diashow {
+    min-height: 250px;
   }
 }
