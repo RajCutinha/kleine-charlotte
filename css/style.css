@@ -277,6 +277,66 @@ section div p {
   padding: 2em 6em;
 }
 
+.offer-section {
+  padding: 6em 0 0;
+}
+
+.offer-section h1 {
+  font-family: "Cinzel", serif;
+  font-weight: 700;
+  font-size: 3rem;
+  padding: 0 5%;
+  color: #3f3d56;
+  margin-bottom: 1em;
+}
+
+.offer-section h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #e4e4e4;
+  font-size: 2rem;
+  margin-bottom: 1em;
+}
+
+.offer-section p {
+  color: #e4e4e4;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+
+.offer-section .offer {
+  padding: 3em 5% 1em;
+}
+
+.offer-section .offer-img {
+  overflow: hidden;
+  margin-bottom: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  align-content: center;
+}
+
+.offer-section .offer-img img {
+  border-radius: 10%;
+  object-fit: cover;
+  width: 20%;
+  min-width: 200px;
+}
+
+.offer-section .offer:first-of-type {
+  background-color: #3f3d56;
+}
+
+.offer-section .offer:nth-of-type(2) {
+  background-color: #3d1001;
+}
+
+.offer-section .offer:nth-of-type(3) {
+  background-color: #b3825b;
+}
+
 .contact-section,
 .menu-section {
   display: flex;
