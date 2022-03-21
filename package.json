@@ -11,6 +11,6 @@
     "esbuild": "^0.14.23"
   },
   "scripts": {
-    "build": "esbuild ./js/ani/speisekarte.js --bundle --outfile=./js/ani/speisekarte_ani.js && esbuild ./js/ani/menucard.js --bundle --outfile=./js/ani/menucard_ani.js"
+    "build": "esbuild ./js/ani/speisekarte.js --bundle --outfile=./js/ani/speisekarte_ani.js"
   }
 }
